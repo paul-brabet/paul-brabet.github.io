@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+}
+
+header {
+  background-image: url("../images/wolfanddeer.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #ECECEA;
+}
+
+h1 {
+  letter-spacing: .5em;
+  margin-left: .5em;
+  font-family: 'josefin sans', sans-serif;
+  padding: 70px;
+  margin-top: 0;
+}
+
+h2 {
+  font-family: 'josefin sans', sans-serif;
+  font-size: 22px;
+  margin-top: 0;
+  padding: 0 0 140px 0;
+}
+
+ul {
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+}
+
+li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+  font-size: 20px;
+}
+
+a {
+  color: white;
+}
+
+h3 {
+  color: #404040;
+  padding: 10px 0;
+}
+
+h4 {
+  color: #606060;
+  font-size: 16px;
+}
+
+.bloghead {
+  padding: 20px 0;
+}
+
+.blogentry {
+  padding: 20px 0;
+  text-align: justify;
+  width: 600px;
+}
+
+p {
+  color: black;
+  padding: 10px 0 10px 10px;
+  font-size: 18px;
+}
+
+body {
+  text-align: center;
+  font-family: helvetica;
+  color: #ECECEA;
+  font-size: 22px;
+  background-color: #FDFDF0
+  margin: 0 auto;
+}
+
+div {
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.reflection {
+  background-image: url("../images/reflection.jpeg");
+  background-size: 100% 100%;
+  padding: 10px 0;
+}
+
+.time {
+  background-image: url("../images/time.jpeg");
+  background-size: 100% 100%;
+  padding: 10px 0;
+}
