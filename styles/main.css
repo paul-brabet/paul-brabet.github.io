@@ -25,12 +25,12 @@ h2 {
   padding: 0 0 140px 0;
 }
 
-ul {
+header ul {
   padding: 10px;
   background: rgba(0,0,0,0.5);
 }
 
-li {
+header li {
   display: inline;
   padding: 0px 10px 0px 10px;
   font-size: 20px;
@@ -42,7 +42,6 @@ a {
 
 h3 {
   color: #404040;
-  padding: 10px 0;
 }
 
 h4 {
@@ -51,11 +50,9 @@ h4 {
 }
 
 .bloghead {
-  padding: 20px 0;
 }
 
 .blogentry {
-  padding: 20px 0;
   text-align: justify;
   width: 600px;
 }
@@ -66,12 +63,18 @@ p {
   font-size: 18px;
 }
 
+li {
+  color: black;
+  padding: 10px 0 10px 10px;
+  font-size: 18px;
+}
+
 body {
   text-align: center;
   font-family: helvetica;
   color: #ECECEA;
   font-size: 22px;
-  background-color: #FDFDF0
+  background-color: #FDFDF0;
   margin: 0 auto;
 }
 
@@ -80,14 +83,29 @@ div {
   padding: 10px 0;
 }
 
-.reflection {
-  background-image: url("../images/reflection.jpeg");
-  background-size: 100% 100%;
-  padding: 10px 0;
+.image {
+  max-width: 300px;
+  max-height: 200px;
+  position: relative;
+  width: 100%; /* for IE 6*/
 }
 
-.time {
-  background-image: url("../images/time.jpeg");
-  background-size: 100% 100%;
-  padding: 10px 0;
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h5 {
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  font-size: 16px;
+  text-align: left;
+}
+
+h5 span {
+  font-weight: bold;
+  background: rgb(0,0,0); /*fallback colour*/
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
 }
