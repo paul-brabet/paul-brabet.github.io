@@ -1,5 +1,6 @@
 * {
   text-align: center;
+  font-family: 'josefin sans', sans-serif;
 }
 
 /*Header styling*/
@@ -13,7 +14,13 @@ header {
 
 header h1 {
   letter-spacing: 0.5em;
+  margin-left: 0.5em;
   padding: 0.75em 0 0 0;
+  font-family: 'josefin sans', sans-serif;
+}
+
+header h4 {
+  font-family: 'josefin sans', sans-serif;
 }
 
 header img {
@@ -49,6 +56,7 @@ header li {
   top: 70%;
   font-size: 1.25em;
   text-align: left;
+  color: #ECECEA;
 }
 
 .blogpic h5 span {
