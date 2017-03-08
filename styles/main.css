@@ -1,1 +1,10 @@
+* {
+  text-align: center;
+}
 
+header {
+  background-image: url("../images/wolfanddeersmall.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ECECEA;
+}
