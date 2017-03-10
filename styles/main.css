@@ -59,6 +59,27 @@ header li {
   padding: 0.5em;
 }
 
+footer {
+  text-align: center;
+  background-color: rgb(15,15,15);
+  margin-top: 5em;
+}
+
+footer .icons {
+  font-size: 2em;
+  word-spacing: 2em;
+}
+
+footer a {
+  color: rgb(200,200,200);
+}
+
+footer p {
+ margin-bottom: 0;
+ color: rgb(200,200,200);
+ text-transform: uppercase;
+}
+
 /*blog styling*/
 .bloghead {
   max-width: 52em;
@@ -81,4 +102,16 @@ dt {
 
 dd {
   text-align: justify;
+  margin-bottom: 1em;
+}
+
+.wireframeimage {
+  max-width: 17em;
+  max-height: 22em;
+  margin: 1em auto;
+}
+
+.wireframeimage img {
+  width: 100%;
+  height: 100%;
 }
