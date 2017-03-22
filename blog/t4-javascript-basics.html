@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Paul</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="../styles/main.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header>
+        <h1>Paul</h1>
+<!-- Image disabled for stylistic tryout <img src="../images/paulcircle2.png" alt="me"> -->
+        <h4>developing web developer</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="archive.html">Archive</a></li>
+        </ul>
+  </header>
+
+  <div class="container">
+    <div class="bloghead">
+      <h2>Javascript basics</h2>
+      <p>22 March 2017</p>
+    </div>
+    <div class="blogentry">
+      <dl>
+        <dt>How does JavaScript compare to HTML and CSS?</dt>
+        <dd>A simple analogy that I have heard is that if a website were a a house, HTML would be the structure, and CSS would be the decorations. Javascript would be the context sensitive things that take inputs and create an output, like a switch opening and closing a garage door, or a fireplace providing warmth after being lit until it runs out of wood to burn, or a TV displaying different things based on whether it is on or off and what channel it shows when it is on.</dd>
+        <dd>My personal experience with Javascript is that I would describe it as a 'real' programming language. HTML and CSS are markup languages; for example you use them to set up the names of things and their font size. Javascript on the other hand involves much more thinking both on your behalf and the computer, for example, you tell the computer that for every 'x', do 'y', and while doing that calculate 'z'.</dd>
+        <dt>Explain control flow and loops using an example process from everyday life, for example 'waking up' or 'brushing your teeth'.</dt>
+        <dd>Control flow means that instead of reading all the instructions given, the computer will process certain instructions only in the circumstances it is given. Control flow in javascript will utilise instructions like if/else statements and loops.</dd>
+        <dd>Lets using waking up in the morning as an analogy, because it is when I am at my most robotic. If the alarm is ringing, I will process the command to wake up. Else, I will continue sleeping. While sleeping, I have a loop command that at any given moment there is a 50% chance I'm dreaming. All these events (i.e. sleeping, waking up, dreaming) do not occur all at once because they are directed by ifs, ands, and whiles - this idea is what we call control flow.</dd>
+        <dt>Explain the difference between accessing data from arrays and objects.</dt>
+        <dd>An array is a set of data that has the level of detail of a list. If I were to write 'var myFriends = ["Susan", "John", "Amanda", "Jerry"];' I have just created a variable named 'myFriends' that is equal to Susan, John, Amanda, and Jerry. Though, mind that an array does not need to be grouped so logically. I can create a nonsensical array like 'var soups = ["cabbage soup", 42, false, "Toy Story"]' and it will be wholly legitimate.</dd>
+        <dd>An object goes one step further than the 'list' approach of an array. The easiest way to think about an object is to think of real life objects. An object has properties, and those properties have values. For example, you can say that the apple I am holding has the properties colour, flavour, and size. You would also assign values to these properties, e.g. the colour is red, the flavour is tangy, and the size is large. When I want to describe this to a computer as an object in literal notation, it looks like this:
+          <xmp>
+            var myApple = {
+              colour: red,
+              flavour: tangy,
+              size: large
+            };
+          </xmp>
+        </dd>
+        <dt>Explain what functions are and why they are useful.</dt>
+        <dd>Functions allow you to write your own short hand for lines of code, so you do not repeat lines of code over and over. For instance, you could write:
+          <xmp>
+            var multiply = function() {
+              return 5 * 5;
+            }
+          </xmp>
+        <dd>You have just given yourself a function that calculates 5 x 5 every time you type 'multiply()'.</dd>
+        <dd>But where is the fun in that? You only need to know what 5 x 5 is once. Maybe you want something more flexible. Maybe you want to multiply 5 by something other than 5?</dd>
+          <xmp>
+            var multiply = function(number) {
+              return 5 * number;
+            }
+          </xmp>
+        <dd>Now if you type multiply(2) it will calculate 5 x 2, if you type multiply(954) it will calculate 5 x 954</dd>
+        <dd>But that's boring! How about we use a lot of inputs, and write a greeting instead of math:</dd>
+          <xmp>
+            var greeting = function(name, time, weather, place) {
+              console.log "Good " + time + " dear " + name + "! It's a " + weather + " day today in " + place + " isn't it?";
+            }
+          </xmp>
+        <dd>If you type greeting("Paul", "morning", "sunny", "Auckland") then "Good morning dear Paul! It's a sunny day today in Auckland isn't it?" will be printed to the console.<dd>
+        </dl>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class= "icons">
+          <a href="https://www.facebook.com/pbrabet"><i class="fa fa-facebook"></i></a>
+          <a href="https://github.com/paul-brabet"><i class="fa fa-github"></i></a>
+        </div>
+          <p>© 2017 Paul Brabet </p>
+  </footer>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
