@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="../styles/main.css">
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -35,43 +35,50 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <header>
         <h1>Paul</h1>
-        <img src="images/paulcircle2.png" alt="me">
+<!-- Image disabled for stylistic tryout <img src="../images/paulcircle2.png" alt="me"> -->
         <h4>developing web developer</h4>
         <ul>
           <li><a href="about.html">About</a></li>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="../index.html">Home</a></li>
           <li><a href="archive.html">Archive</a></li>
         </ul>
   </header>
 
   <div class="container">
-    <h2>Latest posts</h2>
-    <div class="row">
-      <div class="four columns">
-        <div class="blogpic">
-          <a href="blog/c8-connecting.html">
-            <img src="images/connecting.jpg" alt="web">
-            <h5><span>Connecting</span></h5>
-          </a>
-        </div>
-      </div>
-      <div class="four columns">
-        <div class="blogpic">
-          <a href="blog/t8-scope.html">
-            <img src="images/telescope.jpg" alt="telescope">
-            <h5><span>Scope</span></h5>
-          </a>
-        </div>
-      </div>
-      <div class="four columns">
-        <div class="blogpic">
-          <a href="blog/c7-motivation.html">
-            <img src="images/carrot.jpg" alt="grounded carrot">
-            <h5><span>Motivation</span></h5>
-          </a>
-        </div>
-      </div>
+    <div class="bloghead">
+      <h2>Scope</h2>
+      <p>13 April 2017</p>
+    </div>
+    <div class="blogentry">
+      <dl>
+        <dt>Explain to a non-tech friend what 'scope' is, and how it works in JavaScript.</dt>
+        <dd>Scope is the idea that certain parts of the code can be read by the computer, and others not unless specific circumstances apply. In javascript, variable visibility exists in either global scope or local scope form. The former is always visible, and the latter is only visible inside a function. In order to remember which is which, I like to think of global scope as looking at the overall picture. At this high level I can only see the global variables; it is only when I start zoooming in to view things at a local level that I start seeing local variables.</dd>
+        <dd>What does this look like in javascript?
+          <xmp>
+            //Below is a global variable
+            var globalVariable = 'visible';
+            //And I can call it at any point, like right now
+            console.log(globalVariable);
+            //Or I can call it inside a function
+            var visibleInsideAFunction () {
+              console.log(globalVariable)
+            };
+            visibleInsideAFunction;
 
+            //Below is a local variable. It is local to a function I have named 'private'
+            var private = function () {
+              var localVariable = 'sneaky sneaky';
+              console.log(localVariable);
+            };
+            //If I call on this local variable without using the relevant function like below...
+            console.log(localVariable);
+            //...the result will be null. This is because it can't be read
+            //But if I call the function that localVariable is local to, it will work
+            private;
+          </xmp>
+        </dd>
+
+      </dl>
     </div>
   </div>
 
