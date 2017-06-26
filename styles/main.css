@@ -24,6 +24,7 @@ header img {
 header ul {
   padding: 0.5em;
   background: rgba(0,0,0,0.5);
+  margin-bottom: 0;
 }
 
 header li {
@@ -80,6 +81,7 @@ footer p {
  text-transform: uppercase;
 }
 
+/* make footer stick to bottom*/
 html, body {
   height: 100%;
 }
