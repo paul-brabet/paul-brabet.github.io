@@ -62,7 +62,7 @@ header li {
 footer {
   text-align: center;
   background-color: rgb(15,15,15);
-  margin-top: 5em;
+  /*margin-top: 5em;*/
 }
 
 footer .icons {
@@ -78,6 +78,17 @@ footer p {
  margin-bottom: 0;
  color: rgb(200,200,200);
  text-transform: uppercase;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  flex: 1 0 auto;
 }
 
 /*blog styling*/
