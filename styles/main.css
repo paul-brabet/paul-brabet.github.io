@@ -23,7 +23,7 @@ header img {
 
 header ul {
   padding: 0.5em;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   margin-bottom: 0;
 }
 
@@ -33,7 +33,12 @@ header li {
   font-size: 1.5em;
 }
 
+
 /*Remaining index page styling*/
+
+#contactForm {
+  display: block;
+}
 
 .blogpic {
   position: relative;
@@ -55,14 +60,15 @@ header li {
 
 .blogpic h5 span {
   font-weight: bold;
-  background: rgb(0,0,0); /*fallback colour*/
-  background: rgba(0,0,0,0.7);
+  background: rgb(0, 0, 0);
+  /*fallback colour*/
+  background: rgba(0, 0, 0, 0.7);
   padding: 0.5em;
 }
 
 footer {
   text-align: center;
-  background-color: rgb(15,15,15);
+  background-color: rgb(15, 15, 15);
   /*margin-top: 5em;*/
 }
 
@@ -72,28 +78,35 @@ footer .icons {
 }
 
 footer a {
-  color: rgb(200,200,200);
+  color: rgb(200, 200, 200);
 }
 
 footer p {
- margin-bottom: 0;
- color: rgb(200,200,200);
- text-transform: uppercase;
+  margin-bottom: 0;
+  color: rgb(200, 200, 200);
+  text-transform: uppercase;
 }
 
+
 /* make footer stick to bottom*/
-html, body {
+
+html,
+body {
   height: 100%;
 }
+
 body {
   display: flex;
   flex-direction: column;
 }
+
 .container {
   flex: 1 0 auto;
 }
 
+
 /*blog styling*/
+
 .bloghead {
   max-width: 52em;
   margin: 0 auto;
