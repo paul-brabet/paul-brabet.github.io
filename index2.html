@@ -20,6 +20,7 @@
 
 <body>
   <div id="page-wrap">
+
     <section id="intro">
       <div>
         <h1>Paul Brabet</h1>
@@ -33,7 +34,39 @@
 
     <section id="projects">
       <div>
-        <p>Projects section</p>
+        <p>Projects</p>
+        <ul id="projectBoxContainer">
+          <a href="">
+            <li class="projectBox">
+              <h3>Te Whare Piringa: Booking App</h3>
+              <p></p>
+            </li>
+          </a>
+          <a href="">
+            <li class="projectBox">
+              <h3>Pick-a-flick</h3>
+              <p></p>
+            </li>
+          </a>
+          <a href=''>
+            <li class="projectBox">
+              <h3>Fridget</h3>
+              <p></p>
+            </li>
+          </a>
+          <a href=''>
+            <li class="projectBox">
+              <h3>Captions</h3>
+              <p></p>
+            </li>
+          </a>
+          <a href=''>
+            <li class="projectBox">
+              <h3>Tinkerlist</h3>
+              <p></p>
+            </li>
+          </a>
+        </ul>
       </div>
     </section>
 
@@ -45,9 +78,25 @@
 
     <section id="contact">
       <div>
-        <p>Contact section</p>
+        <p>Contact</p>
+        <form method="post" action="#">
+          <div id="leftFloat">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="field half">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="4"></textarea>
+          </div>
+          <input type="submit" value="Send Message" class="special" />
+        </form>
       </div>
     </section>
+
   </div>
 
   <script type="text/javascript" src="smoothScroll.js"></script>

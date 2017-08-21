@@ -4,3 +4,55 @@ section {
   justify-content: center;
   align-items: center;
 }
+
+
+/* Intro page */
+
+
+/* Projects page */
+
+#projects {
+  height: 120vh;
+}
+
+#projectBoxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60rem;
+  justify-content: center;
+}
+
+.projectBox {
+  width: 23rem;
+  height: 23rem;
+  background-color: green;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.projectBox>h3 {
+  font-size: 2em;
+}
+
+.projectBox>p {
+  font-size: 1.5em;
+}
+
+
+/* About page */
+
+
+/* Contact page */
+
+form {}
+
+form .field {}
+
+form .field.half {}
+
+#leftFloat {
+  float: left;
+}
