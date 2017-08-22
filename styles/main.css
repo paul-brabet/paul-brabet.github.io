@@ -5,6 +5,10 @@ section {
   align-items: center;
 }
 
+.readableWidth {
+  width: 600px;
+}
+
 
 /* Intro page */
 
