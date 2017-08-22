@@ -80,17 +80,19 @@
       <div>
         <p>Contact</p>
         <form method="post" action="#">
-          <div id="leftFloat">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
+          <div id="nameAndEmail">
+            <div id="name">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div id="email">
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" />
+            </div>
           </div>
-          <div class="field half">
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email" />
-          </div>
-          <div class="field">
+          <div>
             <label for="message">Message</label>
-            <textarea name="message" id="message" rows="4"></textarea>
+            <textarea name="message" id="message" rows="6" cols="43"></textarea>
           </div>
           <input type="submit" value="Send Message" class="special" />
         </form>

@@ -47,12 +47,6 @@ section {
 
 /* Contact page */
 
-form {}
-
-form .field {}
-
-form .field.half {}
-
-#leftFloat {
-  float: left;
+#nameAndEmail {
+  display: flex;
 }
