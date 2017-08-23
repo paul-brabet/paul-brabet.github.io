@@ -9,14 +9,57 @@ section {
   width: 600px;
 }
 
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 
 /* Intro page */
+
+#intro {
+  /* background-image: url('../images/wolfanddeerlarge.jpg');
+  background-size: 100%, 100%; */
+  background-color: #4E4E57;
+  background-repeat: no-repeat;
+  color: #F9FFFF;
+  display: flex;
+  align-items: center;
+}
+
+#tidyLinks {
+  display: flex;
+  justify-content: space-between;
+  width: 25rem;
+}
+
+a {
+  color: #F9FFFF;
+  text-decoration-line: none;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .25em;
+  font-size: 3em;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 350;
+  letter-spacing: .1em;
+  font-size: 1.5em;
+}
 
 
 /* Projects page */
 
 #projects {
   height: 120vh;
+  background-color: #505393;
 }
 
 #projectBoxContainer {
