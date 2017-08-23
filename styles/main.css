@@ -16,28 +16,9 @@ section {
   flex-direction: column;
 }
 
-
-/* Intro page */
-
-#intro {
-  /* background-image: url('../images/wolfanddeerlarge.jpg');
-  background-size: 100%, 100%; */
-  background-color: #4E4E57;
-  background-repeat: no-repeat;
-  color: #F9FFFF;
-  display: flex;
-  align-items: center;
-}
-
-#tidyLinks {
-  display: flex;
-  justify-content: space-between;
-  width: 25rem;
-}
-
 a {
-  color: #F9FFFF;
-  text-decoration-line: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 h1 {
@@ -45,6 +26,7 @@ h1 {
   font-weight: 700;
   letter-spacing: .25em;
   font-size: 3em;
+  color: #F9FFFF;
 }
 
 h2 {
@@ -52,7 +34,53 @@ h2 {
   font-weight: 350;
   letter-spacing: .1em;
   font-size: 1.5em;
+  color: #F9FFFF;
 }
+
+h3 {
+  /* text-transform: uppercase; */
+  font-weight: 100;
+  letter-spacing: .1em;
+  font-size: 1.5em;
+  color: #F9FFFF;
+}
+
+
+/* Intro page */
+
+#intro {
+  /* background-image: url('../images/wolfanddeerlarge.jpg');
+  background-size: 100%, 100%; */
+  /* background-color: #4E4E57; */
+  background-image: linear-gradient(#4E4E57, #60606C);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+#tidyLinks {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+  font-weight: 100;
+  width: 13em;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: transparent;
+}
+
+
+/* button:active {
+  position: relative;
+  top: 1px;
+} */
 
 
 /* Projects page */
@@ -70,9 +98,8 @@ h2 {
 }
 
 .projectBox {
-  width: 23rem;
+  width: 30rem;
   height: 23rem;
-  background-color: green;
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -80,8 +107,24 @@ h2 {
   margin: 0;
 }
 
-.projectBox>h3 {
-  font-size: 2em;
+#box1 {
+  background-color: #4D508E;
+}
+
+#box2 {
+  background-color: #4A4D89;
+}
+
+#box3 {
+  background-color: #484A83;
+}
+
+#box4 {
+  background-color: #45477E;
+}
+
+#box5 {
+  background-color: #424479;
 }
 
 .projectBox>p {
