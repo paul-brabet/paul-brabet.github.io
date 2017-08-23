@@ -17,7 +17,7 @@ section {
 }
 
 a {
-  color: #ffffff;
+  color: #F9FFFF;
   text-decoration: none;
 }
 
@@ -52,7 +52,7 @@ h3 {
   /* background-image: url('../images/wolfanddeerlarge.jpg');
   background-size: 100%, 100%; */
   /* background-color: #4E4E57; */
-  background-image: linear-gradient(#4E4E57, #60606C);
+  background-image: linear-gradient(#4E4E57, #6D6D7C);
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -66,21 +66,15 @@ h3 {
 button {
   background-color: transparent;
   border-radius: 6px;
-  border: 1px solid #ffffff;
+  border: 1px solid #F9FFFF;
   font-weight: 100;
   width: 13em;
-  color: #ffffff;
+  color: #F9FFFF;
 }
 
 button:hover {
   background-color: transparent;
 }
-
-
-/* button:active {
-  position: relative;
-  top: 1px;
-} */
 
 
 /* Projects page */
@@ -134,9 +128,40 @@ button:hover {
 
 /* About page */
 
+#about {
+  background-color: #F5F5F5;
+  color: #717981;
+}
+
+h2.removeWhite {
+  color: #444444;
+}
+
+a.removeWhite {
+  color: #1EAEDB;
+}
+
 
 /* Contact page */
 
+#contact {
+  background-color: #21B2A6;
+}
+
 #nameAndEmail {
   display: flex;
+}
+
+label {
+  color: #F9FFFF;
+  font-weight: 100;
+}
+
+textarea {
+  min-height: 11em;
+}
+
+input[type='submit'] {
+  color: #F9FFFF;
+  border: 1px solid #F9FFFF;
 }
