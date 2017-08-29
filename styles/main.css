@@ -1,143 +1,202 @@
-/*Header styling*/
+/* Global */
 
-header {
-  background-image: url("../images/wolfanddeersmall.jpg");
-  background-size: cover;
-  background-position: center;
-  color: #ECECEA;
-  font-family: 'josefin sans', sans-serif;
-  text-align: center;
-}
-
-header h1 {
-  letter-spacing: 0.5em;
-  margin-left: 0.5em;
-  padding: 0.75em 0 0 0;
-}
-
-header img {
-  max-width: 15em;
-  max-height: 15em;
-  padding-bottom: 1em;
-}
-
-header ul {
-  padding: 0.5em;
-  background: rgba(0, 0, 0, 0.5);
-  margin-bottom: 0;
-}
-
-header li {
-  display: inline;
-  padding: 0 .75em;
-  font-size: 1.5em;
-}
-
-
-/*Remaining index page styling*/
-
-#contactForm {
-  display: block;
-}
-
-.blogpic {
-  position: relative;
-}
-
-.blogpic img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.blogpic h5 {
-  position: absolute;
-  top: 70%;
-  font-size: 1.25em;
-  text-align: left;
-  color: #ECECEA;
-  font-family: 'josefin sans', sans-serif;
-}
-
-.blogpic h5 span {
-  font-weight: bold;
-  background: rgb(0, 0, 0);
-  /*fallback colour*/
-  background: rgba(0, 0, 0, 0.7);
-  padding: 0.5em;
-}
-
-footer {
-  text-align: center;
-  background-color: rgb(15, 15, 15);
-  /*margin-top: 5em;*/
-}
-
-footer .icons {
-  font-size: 2em;
-  word-spacing: 2em;
-}
-
-footer a {
-  color: rgb(200, 200, 200);
-}
-
-footer p {
-  margin-bottom: 0;
-  color: rgb(200, 200, 200);
-  text-transform: uppercase;
-}
-
-
-/* make footer stick to bottom*/
-
-html,
-body {
-  height: 100%;
-}
-
-body {
+section {
+  height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.readableWidth {
+  width: 600px;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
-.container {
-  flex: 1 0 auto;
+a {
+  color: #F9FFFF;
+  text-decoration: none;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .25em;
+  font-size: 3em;
+  color: #F9FFFF;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 350;
+  letter-spacing: .1em;
+  font-size: 1.5em;
+  color: #F9FFFF;
+}
+
+h3 {
+  font-weight: 100;
+  letter-spacing: .1em;
+  font-size: 1.5em;
+  color: #F9FFFF;
 }
 
 
-/*blog styling*/
+/* VH toggles */
 
-.bloghead {
-  max-width: 52em;
-  margin: 0 auto;
+#intro {}
+
+#projects {}
+
+#about {
+  height: 70vh;
 }
 
-.bloghead h2 {
-  margin-bottom: 0;
+#contact {
+  height: 90vh;
 }
 
-.blogentry {
-  max-width: 52em;
-  margin: 0 auto;
+
+/* Intro page */
+
+#intro {
+  /* Disabled until picture resized
+  background-image: url('../images/wolfanddeerlarge.jpg');
+  background-repeat: no-repeat;
+  background-size: contain */
+  background-image: linear-gradient(#4E4E57, #6D6D7C);
+  display: flex;
+  align-items: center;
 }
 
-dt {
-  font-size: 2rem;
-  font-weight: bold;
+#tidyLinks {
+  display: flex;
+  justify-content: space-between;
 }
 
-dd {
-  text-align: justify;
-  margin-bottom: 1em;
+button {
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px solid #F9FFFF;
+  font-weight: 100;
+  width: 13em;
+  color: #F9FFFF;
 }
 
-.wireframeimage {
-  max-width: 17em;
-  max-height: 22em;
-  margin: 1em auto;
+button:hover {
+  background-color: transparent;
 }
 
-.wireframeimage img {
+
+/* Projects page */
+
+#projects {
+  height: 120vh;
+  background-color: #505393;
+}
+
+#projectBoxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60rem;
+  justify-content: center;
+}
+
+.projectBox {
+  width: 30rem;
+  height: 23rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  flex-direction: column;
+}
+
+.projectBox>h3,
+.projectBox>p {
+  height: 33%;
+  margin: 0;
+}
+
+.projectBox>h3 {
+  text-align: center;
+}
+
+.projectBox>p {
+  margin: 0 2em;
+  font-size: 1em;
+  color: #F5F5F5;
+}
+
+#box1 {
+  background-color: #4D508E;
+}
+
+#box2 {
+  background-color: #4A4D89;
+}
+
+#box3 {
+  background-color: #484A83;
+}
+
+#box4 {
+  background-color: #45477E;
+}
+
+#box5 {
+  background-color: #424479;
+}
+
+.codeAndDemo {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
-  height: 100%;
+}
+
+
+/* About page */
+
+#about {
+  background-color: #F5F5F5;
+  color: #717981;
+}
+
+h2.removeWhite {
+  color: #444444;
+}
+
+a.removeWhite {
+  color: #1EAEDB;
+}
+
+
+/* Contact page */
+
+#contact {
+  background-color: #21B2A6;
+}
+
+#nameAndEmail {
+  display: flex;
+}
+
+label {
+  color: #F9FFFF;
+  font-weight: 100;
+}
+
+textarea {
+  min-height: 11em;
+}
+
+input[type='submit'] {
+  color: #F9FFFF;
+  border: 1px solid #F9FFFF;
 }

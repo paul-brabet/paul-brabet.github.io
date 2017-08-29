@@ -2,91 +2,122 @@
 <html lang="en">
 
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Paul</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <title>Paul Brabet</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Fonts and icons -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-  <link rel="stylesheet" href="styles/main.css">
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" type="text/css">
   <link rel="icon" type="image/png" href="images/favicon.png">
-
+  <!-- CSS files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/skeleton.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- JQuery -->
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
+  <div id="page-wrap">
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <header>
-    <h1>Paul</h1>
-    <img src="images/paulcircle2.png" alt="me">
-    <h4>web developer</h4>
-    <ul>
-      <!-- <li><a href="#about">About</a></li> -->
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </header>
+    <section id="intro">
+      <div class="flexCenter">
+        <h1>Paul Brabet</h1>
+        <h2>Web Developer</h2>
+        <div id="tidyLinks">
+          <a href="#intro"><button>Intro</button></a>
+          <a href="#projects"><button>Projects</button></a>
+          <a href="#about"><button>About</button></a>
+          <a href="#contact"><button>Contact</button></a>
+        </div>
+      </div>
+    </section>
 
-  <div class="container">
-    <div class="row">
-      <a id="projects">Projects</a>
-      <ul>
-        <li>Te Whare Piringa: Booking App</li>
-        <img src=http://placekitten.com/201/201 alt="placeholder image">
-        <li>Pick-a-flick</li>
-        <img src=http://placekitten.com/201/201 alt="placeholder image">
-        <li>Fridget</li>
-        <img src=http://placekitten.com/201/201 alt="placeholder image">
-        <li>Captions</li>
-        <img src=http://placekitten.com/201/201 alt="placeholder image">
-        <li>Tinkerlist</li>
-        <img src=http://placekitten.com/201/201 alt="placeholder image">
-      </ul>
-    </div>
-    <!-- <div class="row">
-      <a id="about">About</a>
-    </div> -->
-    <div class="row">
-      <a id="contact">Contact</a>
-      <h4>Give me a shout!</h4>
-      <form id=contactForm method="POST" action="https://formspree.io/contactpaullb@gmail.com">
-        <input placeholder="Your name" name="name" type="text" tabindex="1" required autofocus>
-        <input placeholder="Your email address" name="email" type="email" tabindex="2">
-        <input placeholder="Your message" name="message" type="text" tabindex="3">
-        <!-- <input type="submit" value="Submit" tabindex="4"> -->
-        <button type="submit" tabindex="4">Send</button>
-      </form>
-    </div>
+    <section id="projects">
+      <div class="flexCenter">
+        <h2>Projects</h2>
+        <ul id="projectBoxContainer">
+          <li class="projectBox" id="box1">
+            <h3>Te Whare Piringa:<br/>Booking App</h3>
+            <p>An online booking app created for a community hall.</p>
+            <div class="codeAndDemo">
+              <a href="https://github.com/Jae-Huh/te-whare-piringa-booking">Code</a>
+              <a href="https://thebookingmanager.herokuapp.com/">Demo</a>
+            </div>
+          </li>
+          <li class="projectBox" id="box2">
+            <h3>Pick-a-flick</h3>
+            <p>A 30 second game to help choose a movie to watch</p>
+            <div class="codeAndDemo">
+              <a href="https://github.com/Jae-Huh/pick-a-flick-in-thirty-tics">Code</a>
+            </div>
+
+          </li>
+          <li class="projectBox" id="box3">
+            <h3>Fridget</h3>
+            <p>Keeping track of fridge items</p>
+            <div class="codeAndDemo">
+              <a href="https://github.com/paul-brabet/Fridget">Code</a>
+            </div>
+          </li>
+
+          <li class="projectBox" id="box4">
+            <h3>Captions</h3>
+            <p>Upload an image, post a caption, and upvote the best caption</p>
+            <div class="codeAndDemo">
+              <a href="https://github.com/pohutukawa-2017/captions">Code</a>
+            </div>
+          </li>
+
+          <!-- <li class="projectBox" id="box5">
+            <h3>Tinkerlist</h3>
+            <p>Sort </p>
+          </li> -->
+        </ul>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="readableWidth">
+        <h2 class="removeWhite">About</h2>
+        <p>I'm a New Zealand based web developer. I spend pretty much every day playing with, experimenting in, and building web apps. My current tools of choice are Node.js, React, Redux and SQLite, along with HTML5 and CSS3, but there is a neverending
+          choice of languages, libraries, and frameworks to play with that I will inevitably delve into. Not to mention are all the ideas for apps I have floating around.</p>
+        <p>Want to have a look at some of the things I have made? Check out my <a class="removeWhite" href="#projects">projects section above</a> or visit my <a class="removeWhite" href="https://github.com/paul-brabet">github profile.</a></p>
+        <!-- <p>I am actually a recent convert to this world; many thanks to the wonderful people at Dev Academy in Auckland for giving the boost I needed. I previously worked in a government department for five years. Even though I gained a good deal of learnings
+          and had plenty of fun in a role that eventually brought me to London, boy am I glad I finally made the leap to web development. I still have a very keen interest in politics to compliment my never ending curiosity in technology.</p>
+        <p>Prior to all that? I actually started off studying Philosophy. I soon folded in poltical studies and economics in. I also love travelling, dancing, and music. How can you not love these things? Yet, out of all these interests, web development
+          wins out.</p> -->
+      </div>
+    </section>
+
+    <section id="contact">
+      <div>
+        <h2>Contact</h2>
+        <form action="https://mailserverpaulieb.herokuapp.com/receivedEmail" method="post">
+          <div id="nameAndEmail">
+            <div id="name">
+              <label for="name">Name</label>
+              <input type="text" name="name" required>
+            </div>
+            <div id="email">
+              <label for="email">Email</label>
+              <input type="email" name="email" required>
+            </div>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea name="message" rows="6" cols="43" required></textarea>
+          </div>
+          <button type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+
   </div>
 
-  <footer>
-    <div class="icons">
-      <a href="https://www.facebook.com/pbrabet"><i class="fa fa-facebook"></i></a>
-      <a href="https://github.com/paul-brabet"><i class="fa fa-github"></i></a>
-    </div>
-    <p>© 2017 Paul Brabet </p>
-  </footer>
-  <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="smoothScroll.js"></script>
+
 </body>
 
 </html>
