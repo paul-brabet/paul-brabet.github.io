@@ -188,6 +188,15 @@ a.remove-white {
   display: flex;
 }
 
+#name,
+#email {
+  width: 100%;
+}
+
+#message {
+  width: 100%;
+}
+
 label {
   color: #F9FFFF;
   font-weight: 100;
