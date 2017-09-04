@@ -188,15 +188,6 @@ a.remove-white {
   display: flex;
 }
 
-#name,
-#email {
-  width: 100%;
-}
-
-#message {
-  width: 100%;
-}
-
 label {
   color: #F9FFFF;
   font-weight: 100;
@@ -204,6 +195,7 @@ label {
 
 textarea {
   min-height: 11em;
+  width: 100%;
 }
 
 input[type='submit'] {
