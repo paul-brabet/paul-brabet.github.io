@@ -236,3 +236,8 @@ input[type='submit'] {
   color: #444444;
   cursor: pointer;
 }
+
+#send-another {
+  display: inline-block;
+  width: 25em;
+}
