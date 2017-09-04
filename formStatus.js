@@ -1,10 +1,3 @@
-// $(document).ready(function() {
-//   $("#submit").click(function() {
-//     $("#form-zone").hide("slow")
-//     $("#sending").show("slow")
-//   })
-// })
-
 $(function() {
   const HTMLForm = $('#ajax-contact')
 
@@ -23,7 +16,7 @@ $(function() {
       })
       .done(function(response) {
         $("#sending").hide("slow")
-        $("#sucess").show("slow")
+        $("#success").show("slow")
 
         $('#name').val('')
         $('#email').val('')
@@ -46,16 +39,6 @@ $(function() {
     $("#form-zone").show("slow")
   })
 })
-
-// $(function() {
-//   $("#send-another").click(function() {
-//     $('#name').val('')
-//     $('#email').val('')
-//     $('#message').val('')
-//     $("#success").hide("slow")
-//     $("#form-zone").show("slow")
-//   })
-// })
 
 $(function() {
   $("#try-again").click(function() {
