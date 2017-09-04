@@ -51,7 +51,9 @@ h3 {
 
 #intro {}
 
-#projects {}
+#projects {
+  height: 90vh;
+}
 
 #about {
   height: 70vh;
@@ -96,7 +98,6 @@ button:hover {
 /* Projects page */
 
 #projects {
-  height: 120vh;
   background-color: #505393;
 }
 
