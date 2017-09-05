@@ -49,22 +49,24 @@ h3 {
 
 /* VH toggles */
 
-#intro {}
-
 #projects {
-  height: 90vh;
+  height: 100vh;
 }
 
 #about {
-  height: 70vh;
+  height: 100vh;
 }
 
 #contact {
-  height: 90vh;
+  height: 92vh;
 }
 
 
 /* Intro page */
+
+#hidden-intro {
+  display: none;
+}
 
 #intro {
   /* Disabled until picture resized
