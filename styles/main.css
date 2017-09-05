@@ -108,6 +108,12 @@ button:hover {
   background-color: transparent;
 }
 
+.pressed {
+  color: #333;
+  border-color: #888;
+  outline: 0;
+}
+
 
 /* Projects page */
 
