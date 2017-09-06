@@ -99,7 +99,7 @@ h3 {
   #intro {
     position: -webkit-sticky;
     position: sticky;
-    top: -84vh;
+    top: -88vh;
   }
 }
 
@@ -126,7 +126,7 @@ nav {
     justify-content: center;
     position: -webkit-sticky;
     position: sticky;
-    top: 20px;
+    top: 1px;
   }
 }
 
