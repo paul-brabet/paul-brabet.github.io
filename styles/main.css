@@ -139,6 +139,12 @@ button {
   color: #F9FFFF;
 }
 
+@media (max-width: 950px) {
+  #intro {
+    margin: 0px;
+  }
+}
+
 button:hover {
   background-color: transparent;
 }
