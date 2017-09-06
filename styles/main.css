@@ -140,7 +140,7 @@ button {
 }
 
 @media (max-width: 950px) {
-  #intro {
+  #button {
     margin: 0px;
   }
 }
