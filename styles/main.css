@@ -11,6 +11,12 @@ section {
   width: 600px;
 }
 
+@media (max-width: 950px) {
+  .readable-width {
+    width: auto;
+  }
+}
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -29,6 +35,7 @@ h1 {
   letter-spacing: .25em;
   font-size: 3em;
   color: #F9FFFF;
+  text-align: center;
 }
 
 h2 {
@@ -81,6 +88,14 @@ h3 {
   top: -92vh;
 }
 
+@media (max-width: 950px) {
+  #intro {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -84vh;
+  }
+}
+
 .intro-content {
   z-index: 1;
   height: 100vh;
@@ -93,12 +108,18 @@ nav {
   z-index: 1;
   display: flex;
   justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
 }
 
 @media (max-width: 950px) {
   nav {
     flex-wrap: wrap;
     justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
   }
 }
 
@@ -133,6 +154,12 @@ button:hover {
   flex-wrap: wrap;
   width: 60rem;
   justify-content: center;
+}
+
+@media (max-width: 950px) {
+  #project-box-container {
+    width: auto;
+  }
 }
 
 .project-box {
