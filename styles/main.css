@@ -140,7 +140,7 @@ button {
 }
 
 @media (max-width: 950px) {
-  #button {
+  button {
     margin: 0px;
   }
 }
