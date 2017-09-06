@@ -95,6 +95,13 @@ nav {
   justify-content: space-between;
 }
 
+@media (max-width: 950px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 button {
   background-color: transparent;
   border-radius: 6px;
