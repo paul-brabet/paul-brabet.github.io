@@ -60,6 +60,12 @@ h3 {
   height: 100vh;
 }
 
+@media (max-width: 950px) {
+  #projects {
+    height: 150vh;
+  }
+}
+
 #about {
   height: 100vh;
 }
