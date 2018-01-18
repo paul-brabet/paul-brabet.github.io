@@ -58,7 +58,7 @@ h3 {
 /* VH toggles */
 
 #projects {
-  height: 100vh;
+  height: 133vh;
 }
 
 @media (max-width: 950px) {
@@ -93,6 +93,7 @@ h3 {
   position: -webkit-sticky;
   position: sticky;
   top: -92vh;
+  z-index: 1;
 }
 
 @media (max-width: 950px) {
@@ -160,6 +161,7 @@ button:hover {
 
 #projects {
   background-color: #505393;
+  position: relative;
 }
 
 #project-box-container {
@@ -200,6 +202,15 @@ button:hover {
   margin: 0 2em;
   font-size: 1em;
   color: #F5F5F5;
+}
+
+#projects-anchor {
+  position: absolute;
+  top: 0;
+}
+
+#projects-title {
+  /* margin-top: 5rem; */
 }
 
 #box1 {

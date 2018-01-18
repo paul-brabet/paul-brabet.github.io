@@ -30,7 +30,7 @@
         <h2>Web Developer</h2>
         <nav>
           <a href="#hidden-intro"><button class="nav-button pressed">Intro</button></a>
-          <a href="#projects"><button class="nav-button">Projects</button></a>
+          <a href="#projects-anchor"><button class="nav-button">Projects</button></a>
           <a href="#about"><button class="nav-button">About</button></a>
           <a href="#contact"><button class="nav-button">Contact</button></a>
         </nav>
@@ -38,10 +38,19 @@
     </section>
 
     <section id="projects">
+      <div id="projects-anchor"></div>
       <div class="flex-center">
-        <h2>Projects</h2>
+        <h2 id="projects-title">Projects</h2>
         <ul id="project-box-container">
+
           <li class="project-box" id="box1">
+              <h3>Tinkerlist</h3>
+              <p>A Spotify playlist manager that summarises music metadata. A work in progress.</p>
+              <div class="code-and-demo"><a href="https://github.com/paul-brabet/express-react-tinkerlist">Code</a>
+              </div>
+          </li>
+
+          <li class="project-box" id="box2">
             <h3>Te Whare Piringa:<br/>Booking App</h3>
             <p>An online booking app created for a community hall.</p>
             <div class="code-and-demo">
@@ -49,21 +58,22 @@
               <a href="https://thebookingmanager.herokuapp.com/">Demo</a>
             </div>
           </li>
-          <li class="project-box" id="box2">
+
+          <li class="project-box" id="box3">
             <h3>Pick-a-flick</h3>
             <p>A 30 second game to help choose a movie to watch</p>
             <div class="code-and-demo"><a href="https://github.com/Jae-Huh/pick-a-flick-in-thirty-tics">Code</a>
             </div>
-
           </li>
-          <li class="project-box" id="box3">
+
+          <li class="project-box" id="box4">
             <h3>Fridget</h3>
             <p>Keeping track of fridge items</p>
             <div class="code-and-demo"><a href="https://github.com/paul-brabet/Fridget">Code</a>
             </div>
           </li>
 
-          <li class="project-box" id="box4">
+          <li class="project-box" id="box5">
             <h3>Captions</h3>
             <p>Upload an image, post a caption, and upvote the best caption</p>
             <div class="code-and-demo"><a href="https://github.com/pohutukawa-2017/captions">Code</a>
